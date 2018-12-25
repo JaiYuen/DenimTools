@@ -1,0 +1,14 @@
+
+
+
+{% for keys in data %}
+<div class={{keys[0].parentTitle}}>
+    <div class="secondTitle">{{keys[0].parentTitle}}</div>
+    <ul>
+      {% for item in keys %}
+      <li class="bs-li" data-for="flashBack" data-link="{{item.url}}">{{item.name}}</li>
+      {%endfor%}
+    </ul>
+ </div> 
+{% endfor %}
+
